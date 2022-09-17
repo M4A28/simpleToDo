@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cv_main_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp">
+
+        <LinearLayout
+            android:id="@+id/ly_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vi_priority"
+                android:background="@color/primary"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:textColor="@color/black"
+                    android:text="2020-12-17"
+                    android:paddingStart="@dimen/_7sdp"
+                    android:textSize="@dimen/_10ssp"
+                    android:padding="@dimen/_2sdp"
+                    android:fontFamily="serif-monospace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_task"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:text="fix my car"
+                    android:textSize="@dimen/_14ssp"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_task_complet"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>

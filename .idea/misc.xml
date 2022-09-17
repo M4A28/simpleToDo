@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_add.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.1765" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1765" />
+        <entry key="app/src/main/res/layout/activity_finished_task.xml" value="0.47474747474747475" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.47474747474747475" />
+        <entry key="app/src/main/res/layout/activity_task_entry.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/task_done_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/task_item.xml" value="0.3611911623439001" />
+        <entry key="app/src/main/res/layout/task_item_layout.xml" value="0.3056894889103182" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/menu_finished_tasks.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/task_entry_menu.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

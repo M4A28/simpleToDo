@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">المهام اليومية</string>
+    <string name="finished_tasks">المهام المنجزة</string>
+    <string name="delete_all_tasks">حذف جميع المهام</string>
+    <string name="delete_finished_tasks">حذف جميع المهام المنجزة</string>
+
+    <string name="save">حفظ</string>
+    <string name="task">المهمة</string>
+    <string name="delete">حذف</string>
+    <string name="add_task">اضافة مهمة</string>
+    <string name="cancel">الغاء</string>
+    <string name="worring">ادخل على الاقل حرف واحد</string>
+    <string name="conform">هل انت متاكد من حذف جميع المهام؟</string>
+    <string name="conform_finished">هل انت متاكد من حذف جميع المهام المنجزة؟</string>
+    <string-array name="priority">
+        <item>درجة الاهمية</item>
+        <item>عالية</item>
+        <item>متوسطة</item>
+        <item>منخفضة</item>
+    </string-array>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="finished_tasks">Finished Tasks</string>
+    <string name="delete_all_tasks">Delete All Tasks</string>
+    <string name="delete_finished_tasks">Delete Finished Tasks</string>
+    <string name="delete">Delete </string>
+    <string name="cancel">Cancel </string>
+    <string name="worring">Please Enter At Least One Character </string>
+    <string name="save">save</string>
+    <string name="add_task">Add Task</string>
+    <string name="task">Task</string>
+    <string name="conform">Are You Sure You want To Delete All Tasks?</string>
+    <string name="conform_finished">Are You Sure You want To Delete All Finished Tasks?</string>
+
+
+    <string-array name="priority">
+        <item>Priority</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+</resources>
