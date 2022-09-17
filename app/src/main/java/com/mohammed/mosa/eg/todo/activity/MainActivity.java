@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Task> tasks;
     TaskDB db;
 
-
+    // made wtih love from mohammed mosa
+    // mohammed.mosa.eg@gmail.com
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
