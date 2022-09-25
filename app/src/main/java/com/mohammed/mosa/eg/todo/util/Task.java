@@ -13,7 +13,7 @@ public class Task implements Comparable<Task>, Serializable{
 
     public Task() {
     }
-
+    // for edit and insert
     public Task(String task, boolean isDone, int priority, Date finishDate) {
         this.task = task;
         this.isDone = isDone;
@@ -21,6 +21,7 @@ public class Task implements Comparable<Task>, Serializable{
         this.finishDate = finishDate;
     }
 
+    // for geting
     public Task(int id, String task, boolean isDone, int priority, Date finishDate) {
         this.id = id;
         this.task = task;
@@ -69,12 +70,17 @@ public class Task implements Comparable<Task>, Serializable{
         this.finishDate = finishDate;
     }
 
+    public String toCSV(){
+        return id +"," + task + ","+ Utility.toInt(isDone) + "," + priority + "," + Utility.toLong(finishDate);
+    }
 
     @Override
     public int compareTo(Task task) {
-        int a = Integer.compare(this.getPriority(), task.getPriority());
+        // sort by date if thay have same date sort by priprity
+        int a = Long.compare(this.getFinishDate().getTime(), task.finishDate.getTime());
         if(a == 0)
-            return Long.compare(this.getFinishDate().getTime(), task.finishDate.getTime());
+            return Integer.compare(this.getPriority(), task.getPriority());
         return a;
     }
+
 }

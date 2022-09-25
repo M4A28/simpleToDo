@@ -8,15 +8,41 @@
     <string name="worring">Please Enter At Least One Character </string>
     <string name="save">save</string>
     <string name="add_task">Add Task</string>
+    <string name="task_deleted">Task Deleted Successfully</string>
+    <string name="task_backup">Task BackUp Saved Successfully</string>
     <string name="task">Task</string>
     <string name="conform">Are You Sure You want To Delete All Tasks?</string>
     <string name="conform_finished">Are You Sure You want To Delete All Finished Tasks?</string>
+    <string name="about">About</string>
+    <string name="backup_tasks">Backup Tasks</string>
+    <string name="export_to">Export to ...</string>
+    <string name="export">Export</string>
+    <string name="choice_option">please choice wey of exporting</string>
+    <string name="export_to_text_file">.txt file</string>
+    <string name="export_to_csv_file">.csv file</string>
+    <string name="finish">finished</string>
+    <string name="not_finish">not finished</string>
+    <string name="embty_list">no items to delete</string>
+    <string name="copy_to_clipvoard">task coped</string>
+    <string name="undo">undo</string>
+    <string name="deleting_task">Deleting task</string>
+    <string name="enter_task">Enter Task</string>
+    <string name="app_version">1.22</string>
+    <string name="made_by">Made By: Mohammed Mosa</string>
+    <string name="contact_me">you can contact me by</string>
+    <string name="email_address">mohammed.mosa.eg@gmail.com</string>
+    <string name="priority">Priority</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="nothing_hear_yet">Nothing Hear Yet</string>
+    <string name="time_travsl">can\'t add task in past</string>
 
-
-    <string-array name="priority">
+    <string-array name="prioritys">
         <item>Priority</item>
         <item>High</item>
         <item>Medium</item>
         <item>Low</item>
     </string-array>
+
 </resources>

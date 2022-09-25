@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/mi_save"
-        android:title="@string/save"
+        android:id="@+id/mi_delete"
+        android:title="@string/delete"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_save" />
-
+        android:icon="@drawable/ic_delete" />
 </menu>

@@ -26,11 +26,11 @@
                 <TextView
                     android:id="@+id/tv_date"
                     android:textColor="@color/black"
-                    android:text="2020-12-17"
+                    android:text="2020-12-17 08:55"
                     android:paddingStart="@dimen/_7sdp"
                     android:textSize="@dimen/_10ssp"
                     android:padding="@dimen/_2sdp"
-                    android:fontFamily="serif-monospace"
+                    android:fontFamily="@font/roboto_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
@@ -38,10 +38,9 @@
                     android:id="@+id/tv_task"
                     android:padding="@dimen/_8sdp"
                     android:textColor="@color/black"
-                    android:text="fix my car"
+                    android:text="fix my car ok محمد"
                     android:textSize="@dimen/_14ssp"
-                    android:textStyle="bold"
-                    android:layout_width="match_parent"
+                    android:fontFamily="@font/liberation_sans_bold"                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>

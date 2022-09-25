@@ -4,19 +4,47 @@
     <string name="finished_tasks">المهام المنجزة</string>
     <string name="delete_all_tasks">حذف جميع المهام</string>
     <string name="delete_finished_tasks">حذف جميع المهام المنجزة</string>
-
     <string name="save">حفظ</string>
+    <string name="task_deleted">تم حذف المهمة بنجاح</string>
     <string name="task">المهمة</string>
     <string name="delete">حذف</string>
     <string name="add_task">اضافة مهمة</string>
     <string name="cancel">الغاء</string>
     <string name="worring">ادخل على الاقل حرف واحد</string>
+    <string name="task_backup">تم حفظ النسخة الاحتياطية بنجاح</string>
     <string name="conform">هل انت متاكد من حذف جميع المهام؟</string>
     <string name="conform_finished">هل انت متاكد من حذف جميع المهام المنجزة؟</string>
-    <string-array name="priority">
+    <string name="about">عنا</string>
+    <string name="backup_tasks">نسخ المهام احتياطيا</string>
+    <string name="export_to">تصدير كـ...</string>
+    <string name="export">تصدير</string>
+    <string name="choice_option">الرجاء اختيار طريقة التصدير</string>
+    <string name="export_to_text_file">ملف نصي</string>
+    <string name="export_to_csv_file"> ملف CSV</string>
+    <string name="finish">انجزت</string>
+    <string name="not_finish">لم تنجز</string>
+    <string name="embty_list">لا يوجد شيء لحذفه</string>
+    <string name="copy_to_clipvoard">تم النسخ الى الحافظة</string>
+    <string name="undo">تراجع</string>
+    <string name="deleting_task">جاري حذف المهمة</string>
+    <string name="enter_task">ادخال المهام</string>
+    <string name="app_version">1.22</string>
+    <string name="made_by">طور هذا التطبيق بواسطة: محمد موسى حفظه الله</string>
+    <string name="contact_me">يمكنك التواصل معي من خلال: </string>
+    <string name="email_address">mohammed.mosa.eg@gmail.com</string>
+    <string name="nothing_hear_yet">لا يوجد شيء حتى الان</string>
+    <string name="priority">درجة الاهمية</string>
+    <string name="high">عالية</string>
+    <string name="medium">متوسطة</string>
+    <string name="low">منخفضة</string>
+    <string name="time_travsl">لا يمكن اضافة مهمة في الماضي</string>
+
+
+    <string-array name="prioritys">
         <item>درجة الاهمية</item>
         <item>عالية</item>
         <item>متوسطة</item>
         <item>منخفضة</item>
     </string-array>
+
 </resources>

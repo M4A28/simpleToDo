@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    tools:context="com.mohammed.mosa.eg.todo.fragment.ExportFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_export"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_txt_export"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:text="@string/export_to_text_file"
+            android:textSize="@dimen/_18ssp"
+            android:layout_height="@dimen/_45sdp"/>
+
+        <RadioButton
+            android:id="@+id/rb_csv_export"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:text="@string/export_to_csv_file"
+            android:textSize="@dimen/_18ssp"
+            android:layout_height="@dimen/_45sdp"/>
+    </RadioGroup>
+
+</FrameLayout>

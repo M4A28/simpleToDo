@@ -7,6 +7,10 @@
     android:orientation="vertical"
     tools:context="com.mohammed.mosa.eg.todo.activity.MainActivity">
 
+    <include
+        android:id="@+id/empty_list"
+        layout="@layout/embty_list"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main_tasks"
         android:layout_width="match_parent"
@@ -14,12 +18,15 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fap_add"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_baseline_add"
-        app:tint="@color/white"
-        android:layout_margin="@dimen/_12sdp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_18sdp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:src="@drawable/ic_edit"
+        app:tint="@color/white" />
 
 </RelativeLayout>

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mohammed.mosa.eg.task">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,16 +15,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDo"
         tools:targetApi="31">
+
+        <service
+            android:name="com.mohammed.mosa.eg.todo.service.RemianderService"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+
+        <activity
+            android:name="com.mohammed.mosa.eg.todo.activity.AboutActivity"
+            android:exported="false"
+            android:label="@string/about"
+            android:parentActivityName="com.mohammed.mosa.eg.todo.activity.MainActivity" />
         <activity
             android:name="com.mohammed.mosa.eg.todo.activity.FinishedTaskActivity"
-            android:parentActivityName="com.mohammed.mosa.eg.todo.activity.MainActivity"
+            android:exported="false"
             android:label="@string/finished_tasks"
-            android:exported="false" />
+            android:parentActivityName="com.mohammed.mosa.eg.todo.activity.MainActivity" />
         <activity
             android:name="com.mohammed.mosa.eg.todo.activity.TaskEntryActivity"
-            android:parentActivityName="com.mohammed.mosa.eg.todo.activity.MainActivity"
-            android:label="@string/finished_tasks"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/enter_task"
+            android:parentActivityName="com.mohammed.mosa.eg.todo.activity.MainActivity" />
         <activity
             android:name="com.mohammed.mosa.eg.todo.activity.MainActivity"
             android:exported="true">

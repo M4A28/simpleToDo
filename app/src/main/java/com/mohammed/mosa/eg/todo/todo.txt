@@ -1,6 +1,88 @@
-3- nice implimtion
-4- good icon
-5- add trans liter
-6- swap to delete
-10- about app
+10- about app // not don yet
 11- cool animation
+15- add restore from backup
+16- add fast insert task in notification
+17- add widget after learn it
+21- shear app
+22- "optinal" encrept task
+23- notification of next time
+24- add timer
+25- add reminder for task
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:hint="@string/task">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_text_entry"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/sp_priortiy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignBottom="@+id/til"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="-40dp" />
+
+    <TextView
+        android:id="@+id/tv_remind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sp_priortiy"
+        android:layout_marginTop="55sp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="-25dp"
+        android:text="remind me at: " />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_alignBottom="@+id/sp_priortiy"
+        android:layout_marginTop="55sp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="-120dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_date"
+            android:text="date"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_time"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="time" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fap_save"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_save"
+        app:tint="@color/white"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>

@@ -22,17 +22,27 @@ public class TaskDB extends SQLiteOpenHelper {
     public static final String DB_TABLE_TODO_NAME = "Todo";
     public static final String DB_TB_ID = "id";
     public static final String DB_TB_TASK = "task";
-    public static final String DB_TB_PRIORITY = "priority"; // 4 side 3 low, 2 medum, 1 high
+    public static final String DB_TB_PRIORITY = "priority";
     public static final String DB_TB_IS_DONE= "finish";
     public static final String DB_TB_DATE = "date";
+    public static TaskDB db;
+
 
     public TaskDB(@Nullable Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 
+    public static TaskDB getInstance(Context context){
+        if(db != null)
+            return db;
+        db = new TaskDB(context);
+        return db;
+    }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String sql = "CREATE TABLE " + DB_TABLE_TODO_NAME + " ( "
+        String sql = "CREATE TABLE "
+                + DB_TABLE_TODO_NAME + " ( "
                 + DB_TB_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + DB_TB_TASK + " TEXT, "
                 + DB_TB_PRIORITY + " INTEGER, "
@@ -44,14 +54,14 @@ public class TaskDB extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-        // until now do nothing
+        // until now nothing in my mind for this
     }
 
 
     public boolean insertTask(Task task){
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(DB_TB_TASK, task.getTask());
+        values.put(DB_TB_TASK, Utility.purString(task.getTask()));
         values.put(DB_TB_PRIORITY, task.getPriority());
         values.put(DB_TB_IS_DONE, Utility.toInt(task.isDone()));
         values.put(DB_TB_DATE, Utility.toLong(task.getFinishDate()));
@@ -89,7 +99,30 @@ public class TaskDB extends SQLiteOpenHelper {
             do{
                 @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex(DB_TB_ID));
                 @SuppressLint("Range") String _task = cursor.getString(cursor.getColumnIndex(DB_TB_TASK));
-                @SuppressLint("Range") boolean isDone = Boolean.parseBoolean(cursor.getString(cursor.getColumnIndex(DB_TB_IS_DONE)));
+                @SuppressLint("Range") boolean isDone = Utility.toBoolean(cursor.getInt(cursor.getColumnIndex(DB_TB_IS_DONE)));
+                @SuppressLint("Range") int priority = cursor.getInt(cursor.getColumnIndex(DB_TB_PRIORITY));
+                @SuppressLint("Range") Date date = Utility.toDate(cursor.getLong(cursor.getColumnIndex(DB_TB_DATE)));
+
+                Task task = new Task(id, _task, isDone, priority, date);
+                tasks.add(task);
+            }while (cursor.moveToNext());
+            cursor.close();
+        }
+        db.close();
+        return tasks;
+    }
+
+
+    public ArrayList<Task> getAllTasks(){
+        ArrayList<Task> tasks = new ArrayList<>();
+        SQLiteDatabase db = getReadableDatabase();
+        String sql= "SELECT * FROM " + DB_TABLE_TODO_NAME;
+        Cursor cursor = db.rawQuery(sql, null);
+        if(cursor.moveToFirst()){
+            do{
+                @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex(DB_TB_ID));
+                @SuppressLint("Range") String _task = cursor.getString(cursor.getColumnIndex(DB_TB_TASK));
+                @SuppressLint("Range") boolean isDone = Utility.toBoolean(cursor.getInt(cursor.getColumnIndex(DB_TB_IS_DONE)));
                 @SuppressLint("Range") int priority = cursor.getInt(cursor.getColumnIndex(DB_TB_PRIORITY));
                 @SuppressLint("Range") Date date = Utility.toDate(cursor.getLong(cursor.getColumnIndex(DB_TB_DATE)));
 
@@ -111,7 +144,7 @@ public class TaskDB extends SQLiteOpenHelper {
             do{
                 @SuppressLint("Range") int id = cursor.getInt(cursor.getColumnIndex(DB_TB_ID));
                 @SuppressLint("Range") String _task = cursor.getString(cursor.getColumnIndex(DB_TB_TASK));
-                @SuppressLint("Range") boolean isDone = Boolean.parseBoolean(cursor.getString(cursor.getColumnIndex(DB_TB_IS_DONE)));
+                @SuppressLint("Range") boolean isDone = Utility.toBoolean(cursor.getInt(cursor.getColumnIndex(DB_TB_IS_DONE)));
                 @SuppressLint("Range") int priority = cursor.getInt(cursor.getColumnIndex(DB_TB_PRIORITY));
                 @SuppressLint("Range") Date date = Utility.toDate(cursor.getLong(cursor.getColumnIndex(DB_TB_DATE)));
 
@@ -169,8 +202,6 @@ public class TaskDB extends SQLiteOpenHelper {
         int result = db.delete(DB_TABLE_TODO_NAME, DB_TB_ID + "=?", args);
         db.close();
         return result > 0;
-
     }
-
 
 }

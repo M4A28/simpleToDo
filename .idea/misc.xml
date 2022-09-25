@@ -3,16 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_alert.xml" value="0.188" />
         <entry key="app/src/main/res/drawable/ic_baseline_add.xml" value="0.1805" />
+        <entry key="app/src/main/res/drawable/ic_content_copy_black_24dp.xml" value="0.1765" />
         <entry key="app/src/main/res/drawable/ic_delete.xml" value="0.1765" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1765" />
+        <entry key="app/src/main/res/drawable/ic_save.xml" value="0.1765" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_finished_task.xml" value="0.47474747474747475" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.47474747474747475" />
-        <entry key="app/src/main/res/layout/activity_task_entry.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_task_entry.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/base_toolbar.xml" value="0.4446043165467626" />
+        <entry key="app/src/main/res/layout/embty_list.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_add_task.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_export.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/notification_layout.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/spinner_itme.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/spinner_row.xml" value="0.5" />
         <entry key="app/src/main/res/layout/task_done_layout.xml" value="0.5" />
-        <entry key="app/src/main/res/layout/task_item.xml" value="0.3611911623439001" />
+        <entry key="app/src/main/res/layout/task_item.xml" value="0.4702549575070821" />
         <entry key="app/src/main/res/layout/task_item_layout.xml" value="0.3056894889103182" />
-        <entry key="app/src/main/res/menu/main_menu.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/testing.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/finished_tasks_menu.xml" value="0.67" />
+        <entry key="app/src/main/res/menu/main_menu.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu_finished_tasks.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/menu/menu_main.xml" value="0.5" />
         <entry key="app/src/main/res/menu/task_entry_menu.xml" value="0.33" />
@@ -24,5 +37,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
